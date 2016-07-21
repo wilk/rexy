@@ -1,0 +1,17 @@
+{
+  "name": "rexy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10"
+  }
+}
