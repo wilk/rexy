@@ -17,7 +17,7 @@ export default class Rexy {
     private requests: Map<string, IRequestPromise>
 
     constructor(adapter?: any) {
-        this.requests = new Map()
+        this.requests = new Map<string, IRequestPromise>()
 
         let blob: Blob
 

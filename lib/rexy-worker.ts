@@ -4,7 +4,7 @@ export class MemoryAdapter implements IRexyAdapter {
     private data:Map<number, any>
 
     constructor() {
-        this.data = new Map()
+        this.data = new Map<number, any>()
     }
 
     get(id?:number, opts?:any):Promise<any|Array<any>> {
@@ -74,7 +74,6 @@ export class RexyWorker {
 declare function postMessage(data: any): void;
 
 export function worker() {
-    console.log('ayo nonno!')
     let rexy = new RexyWorker(new MemoryAdapter())
 
     addEventListener('message', function (evt:MessageEvent) {

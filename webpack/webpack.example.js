@@ -1,8 +1,8 @@
 module.exports = {
-    entry: ['./index.ts'],
+    entry: ['./examples/example.ts'],
     output: {
-        filename: 'build.js',
-        path: 'dist'
+        filename: 'example.js',
+        path: 'examples'
     },
     resolve: {
         root: __dirname,
